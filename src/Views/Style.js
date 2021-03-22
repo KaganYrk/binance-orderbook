@@ -7,17 +7,17 @@ const windowHeight = Dimensions.get('window').height;
 export const Style = StyleSheet.create({
     rowView: {
         flexDirection: 'row',
-        flex: 1
+        flex:1
     },
     columnView: {
         flexDirection: 'column',
-
-
         flex: 1
     },
+
     header: {
         alignSelf: 'center',
-        color: 'white'
+        color: 'white',
+
     },
     indicatorContainer: {
         flex: 1,
@@ -31,11 +31,22 @@ export const Style = StyleSheet.create({
         alignItems: 'center',
         marginTop: 70
     },
+    
+    tableRow:{
+        flexDirection:'row',
+        flex:6
+    },
+    titleRow:{
+        flexDirection:'row',
+        flex:0.2
+    },
     valueColumn: {
         flex: 1,
-
         alignItems: 'center',
-
+    },
+    block : {
+        flex: 1,
+        alignItems:'center'
     },
     buyPrice: {
         color: '#308C58',

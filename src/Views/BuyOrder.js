@@ -27,7 +27,7 @@ export default function SellBook() {
         </View>
     );
 
-
+        console.log(Math.random());
 
     return data !== undefined ? (
         <View style={Style.columnView}>
@@ -47,7 +47,7 @@ export default function SellBook() {
                 <FlatList
                     data={data.bids}
                     renderItem={RenderTable}
-                    keyExtractor={item => item[0]}
+                    keyExtractor={item => (Math.random()).toString()}
                 />
             </View>
         </View>

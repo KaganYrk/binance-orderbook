@@ -47,7 +47,7 @@ export default function SellBook() {
                 <FlatList
                     data={data.asks}
                     renderItem={RenderTable}
-                    keyExtractor={item => item[0]}
+                    keyExtractor={item => (Math.random()).toString()}
                 />
             </View>
         </View>
